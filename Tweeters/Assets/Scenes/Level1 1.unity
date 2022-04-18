@@ -11090,8 +11090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ceae496737647245ae6ae1c08e2d8f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _volumeParameter: MusicVolume
-  _volumeParameter2: MasterVolume
+  _volumeParameter: MasterVolume
   _mixer: {fileID: 24100000, guid: b9ab7bab15470294abdc773f081a43ce, type: 2}
   _slider: {fileID: 179085877}
   _multiplier: 30
@@ -13780,7 +13779,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _volumeParameter: MusicVolume
-  _volumeParameter2: MasterVolume
   _mixer: {fileID: 24100000, guid: e4f3c5e65802f5d4aaa8680d8043a1c0, type: 2}
   _slider: {fileID: 1228176973}
   _multiplier: 30

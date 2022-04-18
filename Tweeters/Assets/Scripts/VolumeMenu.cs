@@ -9,7 +9,6 @@ public class VolumeMenu : MonoBehaviour
 {
 
     [SerializeField] string _volumeParameter = "MusicVolume";
-    [SerializeField] string _volumeParameter2 = "MasterVolume";
     [SerializeField] AudioMixer _mixer;
     [SerializeField] Slider _slider;
     [SerializeField] float _multiplier = 30f;
@@ -55,7 +54,6 @@ public class VolumeMenu : MonoBehaviour
     {
 
         PlayerPrefs.SetFloat(_volumeParameter, _slider.value);
-        PlayerPrefs.SetFloat(_volumeParameter2, _slider.value);
 
     }
 
@@ -63,7 +61,6 @@ public class VolumeMenu : MonoBehaviour
     {
 
         _mixer.SetFloat(_volumeParameter, Mathf.Log10(value) * _multiplier);
-       _mixer.SetFloat(_volumeParameter2, Mathf.Log10(value) * _multiplier);
 
         _disableToggleEvent = true;
         _toggle.isOn = _slider.value > _slider.minValue;
@@ -75,7 +72,6 @@ public class VolumeMenu : MonoBehaviour
     {
         
         _slider.value = PlayerPrefs.GetFloat(_volumeParameter, _slider.value);
-        _slider.value = PlayerPrefs.GetFloat(_volumeParameter2, _slider.value);
 
     }
 
